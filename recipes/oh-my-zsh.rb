@@ -7,7 +7,6 @@ case node["platform_family"]
         user node['current_user']
         not_if { File.exist?("/.oh-my-zsh") }
       end
-    end
     when 'debian'
         Chef::Log.debug("This recipe is OSX only")
 end
